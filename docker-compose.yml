@@ -1,0 +1,12 @@
+version: "2.2"
+services:
+  ubuntu-dockerce:
+    build:
+      context: .
+    image: ubuntu-dockerce:16.04
+    stdin_open: true
+    tty: true
+    init: true
+    network_mode: bridge
+    environment:
+      DOCKER_HOST:
